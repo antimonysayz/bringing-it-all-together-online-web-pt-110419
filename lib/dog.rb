@@ -73,7 +73,7 @@ class Dog
    new_dog
  end
 
- def self.find_by_name(name:)
+ def self.find_by_name(name)
    sql = <<-SQL
    SELCT * FROM dogs
    WHERE name = ?
