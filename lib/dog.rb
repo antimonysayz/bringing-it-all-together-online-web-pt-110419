@@ -32,5 +32,11 @@ class Dog
     self
   end
 
+  def self.create(row)
+    dog = Dog.new(row)
+    dog
+
+  end
+
 
 end
