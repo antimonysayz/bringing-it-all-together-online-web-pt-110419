@@ -53,7 +53,7 @@ class Dog
     SQL
     dog = DB[:conn].execute(sql, id)
     new_dog = self.new_from_db(dog)
-
+    new_dog.id
   end
 
 
