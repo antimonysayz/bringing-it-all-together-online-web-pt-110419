@@ -32,10 +32,9 @@ class Dog
     self
   end
 
-  def self.create(row)
-    dog = Dog.new(row)
+  def self.create(hash)
+    dog = Dog.new(hash)
     dog
-
   end
 
 
