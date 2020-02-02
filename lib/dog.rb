@@ -8,4 +8,11 @@ class Dog
     @breed = breed
   end
 
+  def create_table
+    sql = <<-SQL
+    CREATE TABLE IF NOT EXISTS dog
+    SQL
+    DB[:conn].execute(sql)
+  end
+
 end
